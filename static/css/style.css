@@ -1,0 +1,1844 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+input,
+textarea,
+select {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+a {
+  color: #000;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "GT-Eesti", Arial;
+  font-weight: 500;
+  color: #000;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+::placeholder {
+  color: #9b9b9b;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+
+::-ms-input-placeholder {
+  color: #9b9b9b;
+}
+img {
+  display: block;
+  width: 100%;
+}
+#home {
+}
+#home header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 41px;
+}
+#home header div.left {
+}
+#home header div.left h1 {
+}
+#home header div.left h1 a {
+}
+#home header div.left h1 a img {
+}
+#home header div.middle {
+  width: 50%;
+}
+#home header div.middle ul {
+  display: flex;
+  justify-content: space-between;
+}
+#home header div.middle ul li {
+}
+#home header div.middle ul li a {
+}
+#home header div.right {
+  width: 16%;
+  margin-right: 54px;
+}
+#home header div.right ul {
+  display: flex;
+  justify-content: space-between;
+}
+#home header div.right ul li {
+}
+#home header div.right ul li a {
+}
+#home header div.right ul li a {
+}
+#home header div.right ul li a {
+}
+#home header div.right ul li a.button {
+  border: 1px solid;
+  padding: 7px;
+  border-radius: 9px;
+  color: #ff784b;
+}
+#home section.spotlight {
+  padding-top: 10%;
+}
+#home section.spotlight section.wrapper {
+}
+#home section.spotlight div.top {
+  display: flex;
+  justify-content: space-between;
+}
+#home section.spotlight div.top div.left {
+  width: 37%;
+}
+#home section.spotlight div.top div.left h4 {
+  font-size: 44px;
+  font-weight: 800;
+}
+#home section.spotlight div.top div.left p {
+  margin: 50px 0px;
+}
+#home section.spotlight div.top div.left form {
+}
+#home section.spotlight div.top div.left form input[type="email"] {
+  border: 1px solid;
+  padding: 14px;
+  position: relative;
+  font-size: 12px;
+  width: 56%;
+  border-radius: 6px;
+  padding: 14px;
+}
+#home section.spotlight div.top div.left form input[type="submit"] {
+  background: blue;
+  color: #fff;
+  padding: 13px;
+  border-radius: 10px;
+  width: 9%;
+  position: absolute;
+  font-size: 16px;
+  position: absolute;
+  left: 22%;
+}
+#home section.spotlight div.top div.right {
+  width: 50%;
+  margin-left: 7%;
+}
+#home section.spotlight div.top div.right div.img_container {
+}
+#home section.spotlight div.top div.right div.img_container img {
+}
+#home section.spotlight div.bottom {
+  padding-top: 58px;
+}
+#home section.spotlight div.bottom h4 {
+  text-align: center;
+  font-size: 17px;
+}
+#home section.spotlight div.bottom div.logo {
+}
+#home section.spotlight div.bottom div.logo ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  width: 98%;
+}
+#home section.spotlight div.bottom div.logo ul li {
+  width: 10%;
+}
+#home section.spotlight div.bottom div.logo ul li.nbc {
+  width: 4%;
+}
+#boost {
+}
+#boost div.content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12%;
+}
+#boost div.content div.left {
+  width: 60%;
+}
+#boost div.content div.left div.img_container {
+  width: 85%;
+}
+#boost div.content div.left div.img_container img {
+}
+#boost div.content div.right {
+  width: 38%;
+}
+#boost div.content div.right div.img_container_top_one {
+  width: 12%;
+  background: #ff784b;
+  padding: 7px;
+  border-radius: 17px;
+}
+#boost div.content div.right div.img_container_top_two {
+  width: 13%;
+  background: #d8db29;
+  padding: 7px;
+  border-radius: 17px;
+}
+#boost div.content div.right div.img_container_top_three {
+  width: 13%;
+  background: #3cd278;
+  padding: 7px;
+  border-radius: 17px;
+}
+#boost div.content div.right div.img_container_top img {
+}
+#boost div.content div.right h4 {
+  font-size: 41px;
+  font-weight: 800;
+  font-size: 41px;
+  margin-top: 13px;
+}
+#boost div.content div.right h6 {
+  font-weight: 600;
+  padding: 29px 0;
+  font-size: 17px;
+  width: 81%;
+}
+#boost div.content div.right a {
+  background: blue;
+  padding: 12px;
+  border-radius: 19px;
+  width: 26%;
+  text-align: center;
+  color: #fff;
+  display: block;
+  border-radius: 11px;
+}
+#boost div.content div.right p {
+  padding: 92px 76px 7px 0;
+  color: silver;
+}
+#boost div.content div.right span {
+  color: silver;
+}
+#boost div.content div.right span b {
+  font-weight: 900;
+}
+#boost div.content div.img_container_bottom {
+  width: 15%;
+  margin-top: 18px;
+}
+#boost div.content div.img_container_bottom img {
+}
+#video {
+  padding-top: 10%;
+}
+#video h1 {
+  font-weight: 800;
+  width: 34%;
+  font-size: 38px;
+  margin-bottom: 58px;
+}
+#video ul {
+  display: flex;
+  justify-content: space-between;
+}
+#video ul li {
+  width: 31%;
+}
+#video ul li div.images {
+  position: relative;
+}
+#video ul li div.images div.img_container_one {
+}
+#video ul li div.images div.img_container_one img {
+  border-radius: 4%;
+}
+#video ul li div.images div.img_container_two {
+  width: 12%;
+  position: absolute;
+  width: 25%;
+  position: absolute;
+  bottom: 9%;
+  left: 11%;
+  padding: 6px 28px;
+  background: #fff;
+  border-radius: 8px;
+}
+#video ul li div.images div.img_container_two_middle {
+  width: 12%;
+  position: absolute;
+  width: 30%;
+  position: absolute;
+  bottom: 9%;
+  left: 11%;
+  padding: 6px 28px;
+  background: #fff;
+  border-radius: 8px;
+}
+#video ul li div.images div.img_container_two_last {
+  position: absolute;
+  bottom: 9%;
+  left: 11%;
+  padding: 5px 11px;
+  background: #fff;
+  border-radius: 8px;
+}
+#video ul li div.images div.img_container_two img {
+}
+#video ul li div.images div.img_container_three {
+  width: 13%;
+  position: absolute;
+  right: 14px;
+  top: 21px;
+  background: #fff;
+  padding: 17px;
+  border-radius: 28px;
+  box-sizing: border-box;
+}
+#video ul li div.images div.img_container_three img {
+}
+#video ul li p {
+  font-weight: 900;
+}
+#profile {
+}
+#profile ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5%;
+}
+#profile ul li {
+  width: 50%;
+  margin-top: 7px;
+  font-size: 12px;
+  font-weight: 900;
+  position: relative;
+}
+#profile ul li div.img_container {
+  width: 95%;
+}
+#profile ul li div.img_container_one {
+  width: 16%;
+  background: #fff;
+  position: absolute;
+  top: 68%;
+  right: 82%;
+  padding: 5px 20px;
+  border-radius: 9px;
+}
+#profile ul li div.img_container_two {
+  width: 18%;
+  background: #fff;
+  position: absolute;
+  top: 68%;
+  right: 80%;
+  padding: 12px 20px;
+  border-radius: 9px;
+}
+#profile ul li div.img_container img {
+}
+#profile ul li h3 {
+  margin-top: 20px;
+  font-weight: 700;
+  width: 70%;
+}
+#profile ul li p {
+  padding-top: 4px;
+}
+#profile ul li span {
+}
+#marketing {
+  padding-top: 12%;
+}
+#marketing h1 {
+  font-size: 39px;
+  font-weight: 800;
+  width: 37%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 8%;
+}
+#marketing div.lists {
+}
+#marketing div.lists ul {
+  display: flex;
+  justify-content: space-between;
+}
+#marketing div.lists ul li {
+  width: 30%;
+}
+#marketing div.lists ul li.border {
+  border-left: 1px dotted;
+  border-right: 1px dotted;
+}
+#marketing div.lists ul li div.top {
+}
+#marketing div.lists ul li div.top div.img_container {
+  margin: 0 auto;
+  width: 53%;
+}
+#marketing div.lists ul li div.top div.img_container img {
+}
+#marketing div.lists ul li div.top h6 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+#marketing div.lists ul li div.top p {
+  width: 57%;
+  text-align: center;
+  margin: 0 auto;
+}
+#marketing div.lists ul li div.bottom {
+  margin-top: 82px;
+}
+#marketing div.lists ul li div.bottom div.img_container {
+}
+#marketing div.lists ul li div.bottom div.img_container img {
+}
+#marketing div.lists ul li div.bottom h6 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+#marketing div.lists ul li div.bottom p {
+  width: 57%;
+  text-align: center;
+  margin: 0 auto;
+}
+#marketing div.messege {
+  width: 42%;
+  background: #d0deff;
+  text-align: center;
+  margin: 75px auto;
+  display: flex;
+  padding: 27px;
+  position: relative;
+}
+#marketing div.messege div.img_container {
+  background: #fff;
+  padding: 3%;
+  border-radius: 50%;
+  align-items: center;
+  position: absolute;
+  bottom: 78%;
+  right: 76%;
+}
+#marketing div.messege div.img_container img {
+}
+#marketing div.messege h6 {
+  width: 61%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 16px;
+}
+#marketing div.messege a {
+  background: blue;
+  padding: 12px;
+  border-radius: 10px;
+  color: #fff;
+}
+#studio {
+  padding-top: 2%;
+}
+#studio h1 {
+  text-align: center;
+  font-size: 41px;
+  width: 39%;
+  margin: 0 auto;
+  font-weight: 600;
+}
+#studio ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7%;
+}
+#studio ul li {
+  width: 30%;
+  position: relative;
+}
+#studio ul li div.first {
+  background: #d0deff;
+  padding-bottom: 71%;
+  padding-top: 62px;
+}
+#studio ul li div.first div.img_container {
+  width: 14%;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #fff;
+  padding: 6%;
+  width: 24%;
+  border-radius: 30px;
+}
+#studio ul li div.first div.img_container img {
+}
+#studio ul li div.first h4 {
+  text-align: center;
+  font-weight: 700;
+  margin: 26px 0;
+}
+#studio ul li div.first p {
+  width: 58%;
+  margin: 0 auto;
+  text-align: center;
+}
+#studio ul li div.first a {
+  display: block;
+  display: block;
+  text-align: center;
+  margin: 39px 0;
+  background: blue;
+  width: 35%;
+  padding: 12px;
+  margin: 39px auto;
+  border-radius: 9px;
+  color: #fff;
+}
+#studio ul li div.first div.img_container_bottom_one {
+  position: absolute;
+  top: 63%;
+}
+#studio ul li div.first div.img_container_bottom_one img {
+}
+#studio ul li div.second {
+  background: #d8e6f4;
+  padding-bottom: 71%;
+  padding-top: 62px;
+}
+#studio ul li div.second div.img_container {
+  width: 14%;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #fff;
+  padding: 6%;
+  width: 24%;
+  border-radius: 30px;
+}
+#studio ul li div.second div.img_container img {
+}
+#studio ul li div.second h4 {
+  text-align: center;
+  font-weight: 700;
+  margin: 26px 0;
+}
+#studio ul li div.second p {
+  width: 58%;
+  margin: 0 auto;
+  text-align: center;
+}
+#studio ul li div.second a {
+  display: block;
+  text-align: center;
+  margin: 39px 0;
+  background: yellow;
+  width: 35%;
+  padding: 12px;
+  margin: 39px auto;
+  border-radius: 9px;
+  color: #fff;
+}
+#studio ul li div.second div.img_container_bottom_two {
+  position: absolute;
+  top: 63%;
+}
+#studio ul li div.second div.img_container_bottom_two img {
+}
+#studio ul li div.third {
+  background: #ffe4db;
+  padding-bottom: 71%;
+  padding-top: 62px;
+}
+#studio ul li div.third div.img_container {
+  width: 14%;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: #fff;
+  padding: 6%;
+  width: 24%;
+  border-radius: 30px;
+}
+#studio ul li div.third div.img_container img {
+}
+#studio ul li div.third h4 {
+  text-align: center;
+  font-weight: 700;
+  margin: 26px 0;
+}
+#studio ul li div.third p {
+  width: 58%;
+  margin: 0 auto;
+  text-align: center;
+}
+#studio ul li div.third a {
+  display: block;
+  text-align: center;
+  margin: 39px 0;
+  background: orange;
+  width: 35%;
+  padding: 12px;
+  margin: 39px auto;
+  border-radius: 9px;
+  color: #fff;
+}
+#studio ul li div.third div.img_container_bottom_three {
+  position: absolute;
+  top: 62%;
+}
+#studio ul li div.third div.img_container_bottom_three img {
+}
+#video_resources {
+  padding: 10% 0;
+}
+#video_resources h1 {
+  font-size: 31px;
+  font-weight: 700;
+  width: 31%;
+}
+#video_resources ul {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+#video_resources ul li {
+}
+#video_resources ul li div.img_container {
+  width: 80%;
+}
+#video_resources ul li div.img_container img {
+}
+#video_resources ul li p {
+  margin: 11px 0;
+}
+#video_resources ul li h4 {
+  font-weight: 600;
+  width: 74%;
+}
+#video_resources ul li p {
+}
+#video_resources ul li a {
+  display: block;
+  width: 19%;
+  margin: 11px 0;
+  border-bottom: 1px solid;
+}
+#video_resources a.button {
+  display: block;
+  background: blue;
+  width: 16%;
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  color: #fff;
+  border-radius: 12px;
+}
+#form {
+  background: #000;
+  color: #fff;
+}
+#form section.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7%;
+}
+#form div.left {
+  width: 40%;
+}
+#form div.left h1 {
+  font-size: 40px;
+  width: 56%;
+  font-weight: 700;
+}
+#form div.left p {
+  color: silver;
+  margin: 23px 0px;
+  font-size: 13px;
+}
+#form div.left h4 {
+  margin: 27px 0;
+}
+#form div.left h3 {
+  font-size: 15px;
+  font-style: italic;
+}
+#form div.left h6 {
+  margin-top: 17px;
+}
+#form div.left h5 {
+  font-size: 11px;
+  color: silver;
+  margin-bottom: 14px;
+}
+#form div.left div.profile {
+}
+#form div.left div.profile ul {
+  width: 90%;
+  display: flex;
+}
+#form div.left div.profile ul li {
+  width: 12%;
+  margin-right: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+#form div.left div.profiles ul li img {
+}
+#form div.left div.logo {
+  margin-top: 59px;
+}
+#form div.left div.logo ul {
+  width: 90%;
+  display: flex;
+}
+#form div.left div.logo ul li {
+  width: 18%;
+  margin: auto;
+  margin-left: 0;
+}
+#form div.left div.logo ul li img {
+}
+#form div.right {
+  width: 50%;
+  background: #fff;
+  margin: 0 81px 37px 81px;
+  padding: 6%;
+}
+#form div.right h1 {
+  color: #000;
+  font-size: 25px;
+  font-weight: 800;
+}
+#form div.right form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 7%;
+}
+#form div.right form input {
+  width: 49%;
+  border: 1px solid #f0f0f0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+#form div.right form input[type="email"] {
+}
+#form div.right form input[type="text"] {
+}
+#form div.right form input[type="checkbox"] {
+  margin-top: 1%;
+  width: 3%;
+}
+#form div.right form select {
+  border: 1px solid #f0f0f0;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 49%;
+}
+#form div.right form p {
+  width: 95%;
+  font-size: 14px;
+}
+#form div.right form p a {
+}
+#form div.right a.button {
+  background: blue;
+  display: block;
+  text-align: center;
+  width: 92%;
+  padding: 5%;
+  color: #fff;
+  margin: 0px auto;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+footer {
+}
+footer section.wrapper {
+  display: flex;
+}
+footer div.left {
+  width: 40%;
+}
+footer div.left h1 {
+  padding-top: 16%;
+  width: 56%;
+  font-size: 23px;
+  font-weight: 600;
+}
+footer div.left ul {
+  width: 84%;
+  margin: 28px 0;
+  display: flex;
+}
+footer div.left ul li {
+  width: 6%;
+  margin-right: 39px;
+}
+footer div.left div.lang {
+  margin-top: 63px;
+}
+footer div.left div.lang div.lang_img {
+  display: flex;
+  align-items: center;
+}
+footer div.left div.lang div.lang_img div.img_container {
+  width: 6%;
+  margin-right: 11px;
+}
+footer div.left div.lang div.img_container img {
+}
+footer div.left div.lang ul {
+  display: flex;
+}
+footer div.left div.lang ul li {
+  margin-right: 25px;
+  width: 10%;
+}
+footer div.left div.lang ul li a {
+}
+footer div.right {
+  display: flex;
+  width: 73%;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-right: 117px;
+}
+footer div.right div.solutions {
+}
+footer div.right div.solutions p {
+  margin-bottom: 20px;
+}
+footer div.right div.solutions ul {
+}
+footer div.right div.solutions ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+footer div.right div.solutions ul li div.img_container {
+}
+footer div.right div.solutions ul li div.img_container img {
+}
+footer div.right div.solutions ul li a {
+  margin-left: 10px;
+  align-items: center;
+}
+footer div.right div.use {
+}
+footer div.right div.use ul {
+}
+footer div.right div.use ul li {
+  margin-bottom: 12px;
+}
+footer div.right div.use ul li a.button {
+  font-weight: 800;
+}
+footer div.right div.resources ul {
+}
+footer div.right div.resources ul li {
+  margin-bottom: 12px;
+}
+footer div.right div.resources ul li a {
+}
+footer div.right div.resources ul li a.button {
+  margin-bottom: 12px;
+  margin-top: 45px;
+  font-weight: 700;
+}
+footer div.right div.company {
+}
+footer div.right div.company ul {
+}
+footer div.right div.company ul li {
+  margin-bottom: 12px;
+}
+footer div.right div.company ul li a.button {
+  font-weight: 800;
+}
+@media all and (max-width: 1280px) {
+  #home section.spotlight div.top div.left form input[type="submit"] {
+    background: blue;
+    color: #fff;
+    padding: 13px;
+    border-radius: 10px;
+    width: 10%;
+    position: absolute;
+    font-size: 16px;
+    position: absolute;
+    left: 22%;
+  }
+  #boost div.content div.right h6 {
+    font-weight: 600;
+    padding: 28px 0;
+    font-size: 17px;
+    width: 85%;
+  }
+  #boost div.content div.right a {
+    background: blue;
+    width: 35%;
+  }
+  #boost div.content div.right p {
+    padding: 24px 76px 7px 0;
+  }
+  #profile ul li div.img_container_one {
+    width: 16%;
+    background: #fff;
+    position: absolute;
+    top: 64%;
+  }
+  #profile ul li div.img_container_two {
+    width: 18%;
+    background: #fff;
+    position: absolute;
+    top: 63%;
+  }
+  #marketing {
+    padding-top: 11%;
+  }
+  #marketing div.lists ul li.border {
+    border-left: 2px dotted;
+    border-right: 2px dotted;
+  }
+  #marketing div.lists ul li div.top h6 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin: 32px 0;
+  }
+  #marketing div.lists ul li div.top p {
+    width: 91%;
+  }
+  #marketing div.lists ul li div.bottom p {
+    width: 91%;
+  }
+  #marketing div.messege {
+    width: 60%;
+    background: #d0deff;
+    text-align: center;
+    margin: 75px auto;
+    display: flex;
+    padding: 19px;
+    position: relative;
+  }
+  #marketing div.messege h6 {
+    width: 50%;
+    text-align: center;
+    margin: 5px auto;
+    font-size: 16px;
+  }
+  #marketing div.messege div.img_container {
+    background: #fff;
+    padding: 3%;
+    border-radius: 50%;
+    align-items: center;
+    position: absolute;
+    bottom: 64%;
+    right: 86%;
+  }
+  #studio h1 {
+    text-align: center;
+    font-size: 41px;
+    width: 58%;
+  }
+  #studio ul li {
+    width: 31%;
+    position: relative;
+  }
+  #studio ul li div.first p {
+    width: 77%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #studio ul li div.first a {
+    width: 40%;
+  }
+  #studio ul li div.second p {
+    width: 77%;
+  }
+  #studio ul li div.second a {
+    width: 40%;
+  }
+  #studio ul li div.third p {
+    width: 77%;
+  }
+  #studio ul li div.third a {
+    width: 40%;
+  }
+  #video_resources h1 {
+    font-size: 31px;
+    font-weight: 700;
+    width: 41%;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 23%;
+  }
+  #video_resources a.button {
+    display: block;
+    background: blue;
+    width: 20%;
+  }
+  #form div.right {
+    padding: 2%;
+  }
+  #form div.right a.button {
+    padding: 3%;
+  }
+  footer div.left h1 {
+    padding-top: 16%;
+    width: 88%;
+  }
+  footer div.left div.lang ul li {
+    margin-right: 25px;
+    width: 14%;
+  }
+  footer div.right div.solutions ul {
+    margin-right: 25px;
+  }
+  footer div.right {
+    padding-right: 0px;
+  }
+}
+@media all and (max-width: 1080px) {
+  #home header div.middle {
+    display: none;
+  }
+  #home header div.right {
+    display: none;
+  }
+  #home section.spotlight div.top div.left h4 {
+    font-size: 32px;
+  }
+  #home section.spotlight div.top div.left p {
+    margin: 15px 0px;
+  }
+  #home section.spotlight div.top div.left {
+    width: 52%;
+  }
+  #home section.spotlight div.top div.left form input[type="email"] {
+    font-size: 10px;
+    padding: 11px;
+  }
+  #home section.spotlight div.top div.left form input[type="submit"] {
+    padding: 13px;
+    width: 10%;
+    font-size: 10px;
+    left: 23%;
+  }
+  #boost div.content div.left div.img_container {
+    width: 75%;
+  }
+  #boost div.content div.right h4 {
+    font-size: 28px;
+  }
+  #boost div.content div.right h6 {
+    font-weight: 200;
+    padding: 13px 0;
+    font-size: 15px;
+    width: 91%;
+  }
+  #boost div.content div.right a {
+    background: blue;
+    width: 29%;
+    font-size: 12px;
+  }
+  #boost div.content div.right p {
+    padding: 10px 76px 7px 0;
+    font-size: 12px;
+    width: 99%;
+  }
+  #video h1 {
+    width: 59%;
+  }
+  #video ul li div.images div.img_container_three {
+    width: 11%;
+    position: absolute;
+    right: 16px;
+    top: 21px;
+    background: #fff;
+    padding: 8px;
+    border-radius: 28px;
+    box-sizing: border-box;
+  }
+  #video ul li p {
+    font-weight: 900;
+    font-size: 15px;
+  }
+  #profile ul li div.img_container_one {
+    top: 63%;
+  }
+  #marketing h1 {
+    font-size: 39px;
+    font-weight: 800;
+    width: 57%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+  #profile ul li div.img_container_two {
+    width: 16%;
+    background: #fff;
+    position: absolute;
+    top: 62%;
+  }
+  #marketing {
+    padding-top: 9%;
+  }
+  #marketing div.messege h6 {
+    width: 55%;
+  }
+  #studio h1 {
+    text-align: center;
+    font-size: 41px;
+    width: 64%;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 25%;
+  }
+  #video_resources a.button {
+    display: block;
+    background: blue;
+    width: 22%;
+    padding: 10px;
+  }
+  #form div.left div.logo {
+    margin-top: 28px;
+  }
+}
+@media all and (max-width: 980px) {
+  #home section.spotlight div.top div.left form input[type="email"] {
+    font-size: 11px;
+  }
+  #home section.spotlight div.top div.left form input[type="submit"] {
+    padding: 13px;
+    width: 10%;
+    font-size: 10px;
+    left: 32%;
+  }
+  #boost div.content div.right {
+    width: 45%;
+  }
+  #boost div.content div.right a {
+    background: blue;
+    width: 31%;
+  }
+  #boost div.content div.left div.img_container {
+    width: 92%;
+  }
+  #video ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  #video ul li {
+    width: 45%;
+  }
+  #video ul li:last-child {
+    width: 45%;
+    margin: 43px auto;
+  }
+  #video ul li div.images div.img_container_three {
+    padding: 12px;
+  }
+  #profile ul li div.img_container_one {
+    top: 55%;
+    width: 20%;
+    right: 77%;
+  }
+  #profile ul li div.img_container_two {
+    width: 20%;
+    background: #fff;
+    position: absolute;
+    top: 54%;
+    right: 77%;
+  }
+  #marketing h1 {
+    font-size: 39px;
+    font-weight: 800;
+    width: 75%;
+  }
+  #marketing div.messege a {
+    width: 31%;
+    padding: 10px 15px;
+  }
+  #marketing div.messege {
+    width: 61%;
+    align-items: center;
+    padding: 10px;
+  }
+  #marketing div.messege h6 {
+    width: 62%;
+    font-size: 12px;
+  }
+  #marketing div.messege div.img_container {
+    bottom: 75%;
+    right: 89%;
+  }
+  #studio h1 {
+    text-align: center;
+    font-size: 37px;
+    width: 90%;
+  }
+  #studio ul li {
+    width: 43%;
+    position: relative;
+  }
+  #studio ul {
+    flex-wrap: wrap;
+  }
+  #studio ul li div.third {
+    margin: 94px 0;
+  }
+  #video_resources h1 {
+    font-size: 26px;
+    font-weight: 700;
+    width: 60%;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 22%;
+    font-size: 12px;
+  }
+  #video_resources a.button {
+    display: block;
+    background: blue;
+    width: 27%;
+  }
+  #form section.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+    flex-wrap: wrap;
+  }
+  #form div.left div.profile ul {
+    width: 39%;
+    display: flex;
+  }
+  #form div.left div.logo ul {
+    width: 46%;
+    display: flex;
+  }
+  #form div.right {
+    width: 87%;
+    margin-top: 8%;
+  }
+  #form div.left {
+    width: 93%;
+  }
+  footer div.left h1 {
+    padding-top: 16%;
+    font-size: 17px;
+  }
+  footer div.left ul li {
+    width: 7%;
+    margin-right: 16px;
+  }
+  footer div.left div.lang {
+    margin-top: 20px;
+  }
+  footer section.wrapper {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  footer div.right {
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 768px) {
+  #home section.spotlight div.top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+  }
+  #home section.spotlight div.top div.right {
+    width: 62%;
+    margin: 0 auto;
+  }
+  #home section.spotlight div.top div.left {
+    width: 74%;
+    margin: 0 auto;
+  }
+  #home section.spotlight div.top div.left h4 {
+    font-size: 32px;
+    margin-top: 8%;
+    text-align: center;
+  }
+  #home section.spotlight div.top div.left form input[type="email"] {
+    width: 47%;
+  }
+  #home section.spotlight div.top div.left form input[type="submit"] {
+    padding: 13px;
+    width: 15%;
+    font-size: 10px;
+    left: 51%;
+  }
+  #boost div.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  #boost div.content div.left {
+    width: 69%;
+    margin: 0 auto;
+  }
+  #boost div.content div.right {
+    width: 79%;
+    margin: 0 auto;
+  }
+  #boost div.content div.right div.img_container_top_one {
+    width: 8%;
+  }
+  #boost div.content div.right div.img_container_top_two {
+    width: 9%;
+  }
+  #boost div.content div.right div.img_container_top_three {
+    width: 10%;
+  }
+  #boost div.content div.left div.img_container {
+    width: 92%;
+    margin-top: 33px;
+  }
+  #video h1 {
+    width: 66%;
+  }
+  #video ul li div.images div.img_container_three {
+    padding: 10px;
+  }
+  #video ul li div.images div.img_container_two_last {
+    position: absolute;
+    bottom: 9%;
+    left: 6%;
+  }
+  #video ul li p {
+    font-weight: 900;
+    font-size: 14px;
+  }
+  #profile ul li div.img_container_one {
+    top: 49%;
+    width: 22%;
+    right: 70%;
+  }
+  #profile ul li div.img_container_two {
+    width: 20%;
+    background: #fff;
+    position: absolute;
+    top: 48%;
+    right: 74%;
+  }
+  #profile ul li h3 {
+    margin-top: 23px;
+    font-weight: 700;
+    width: 94%;
+    font-size: 12px;
+  }
+  #profile ul li p {
+    padding-top: 4px;
+    font-size: 11px;
+  }
+  #marketing h1 {
+    font-size: 39px;
+    font-weight: 800;
+    width: 86%;
+  }
+  #marketing div.lists ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #marketing div.lists ul li {
+    width: 50%;
+  }
+  #marketing div.lists ul li.border {
+    border-left: 2px dotted;
+    border-right: none;
+  }
+  #marketing div.lists ul li:last-child {
+    width: 50%;
+    margin-top: 13%;
+  }
+  #marketing div.messege {
+    flex-wrap: wrap;
+  }
+  #marketing div.messege h6 {
+    width: 90%;
+    font-size: 12px;
+    margin: 8px auto;
+  }
+  #marketing div.messege a {
+    width: 37%;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+  #marketing div.messege div.img_container {
+    bottom: 89%;
+    right: 89%;
+  }
+  #studio h1 {
+    text-align: center;
+    font-size: 25px;
+    width: 88%;
+  }
+  #studio ul li div.first p {
+    width: 87%;
+  }
+  #studio ul li div.first a {
+    width: 48%;
+    padding: 8px;
+    margin: 10px auto;
+  }
+  #studio ul li div.second p {
+    width: 89%;
+  }
+  #studio ul li div.second a {
+    width: 48%;
+    padding: 8px;
+    margin: 10px auto;
+  }
+  #studio ul li div.first div.img_container_bottom_one {
+    position: absolute;
+    top: 70%;
+  }
+  #studio ul li div.second div.img_container_bottom_two {
+    position: absolute;
+    top: 68%;
+  }
+  #studio ul li div.third p {
+    width: 89%;
+  }
+  #studio ul li div.third a {
+    width: 48%;
+    padding: 8px;
+    margin: 10px auto;
+  }
+  #video_resources ul {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    flex-wrap: wrap;
+  }
+  #video_resources ul li div.img_container {
+    width: 64%;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 10%;
+  }
+  #video_resources a.button {
+    display: block;
+    background: blue;
+    width: 30%;
+  }
+  footer div.left h1 {
+    padding-top: 16%;
+    width: 132%;
+  }
+  footer div.left div.lang ul li {
+    margin-right: 25px;
+    width: 17%;
+  }
+}
+@media all and (max-width: 640px) {
+  #home section.spotlight div.top div.right div.img_container {
+    width: 100%;
+  }
+  #home section.spotlight div.top div.left {
+    width: 100%;
+    margin: 0 auto;
+  }
+  div.bottom div.logo ul li {
+    width: 20%;
+  }
+  #boost div.content div.right h6 {
+    font-weight: 200;
+    padding: 13px 0;
+    font-size: 12px;
+    width: 91%;
+  }
+  #boost div.content div.right span {
+    color: silver;
+    font-size: 11px;
+  }
+  #video h1 {
+    width: 96%;
+    font-size: 30px;
+  }
+  #video ul li {
+    width: 83%;
+    margin: 0 auto;
+  }
+  #video ul li div.images div.img_container_three {
+    padding: 14px;
+  }
+  #video ul li div.images div.img_container_three {
+    padding: 14px;
+  }
+  #video ul li p {
+    font-weight: 900;
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  #video ul li div.images div.img_container_two {
+    width: 12%;
+    position: absolute;
+    width: 21%;
+  }
+  #video ul li:last-child {
+    width: 83%;
+    margin: 0 auto;
+  }
+  #profile ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    flex-wrap: wrap;
+  }
+  #profile ul li {
+    width: 62%;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 900;
+    position: relative;
+  }
+  #profile ul li {
+    width: 92%;
+  }
+  #profile ul li div.img_container_one {
+    top: 62%;
+    width: 20%;
+    right: 74%;
+  }
+  #profile ul li div.img_container_two {
+    width: 20%;
+    background: #fff;
+    position: absolute;
+    top: 61%;
+    right: 77%;
+  }
+  #marketing h1 {
+    font-size: 33px;
+    font-weight: 800;
+    width: 86%;
+  }
+  #marketing div.messege {
+    width: 94%;
+    align-items: center;
+  }
+  #marketing div.messege div.img_container {
+    bottom: 82%;
+    right: 87%;
+  }
+  #studio ul li {
+    width: 79%;
+    position: relative;
+    margin: 92px auto;
+  }
+  #video_resources h1 {
+    font-size: 26px;
+    font-weight: 700;
+    width: 91%;
+  }
+  #video_resources ul li div.img_container {
+    width: 57%;
+    margin: 0 auto;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 13%;
+  }
+  #video_resources a.button {
+    display: block;
+    background: blue;
+    width: 41%;
+    padding: 13px;
+  }
+  #form div.left div.profile ul {
+    width: 71%;
+    display: flex;
+  }
+  #form div.left div.logo ul {
+    width: 84%;
+    display: flex;
+  }
+  #form div.right form input {
+    width: 90%;
+  }
+  #form div.right {
+    width: 108%;
+    margin-top: 8%;
+    margin: 0;
+    margin-top: 8%;
+  }
+  #form div.right h1 {
+    margin-bottom: 10%;
+  }
+  #form div.right form select {
+    width: 91%;
+  }
+  #form div.right form p {
+    width: 90%;
+    font-size: 12px;
+  }
+  #form div.right {
+    margin-bottom: 48px;
+  }
+  footer div.right {
+    margin: 27px auto;
+    flex-wrap: wrap;
+  }
+  footer div.left {
+    width: 100%;
+  }
+}
+@media all and (max-width: 480px) {
+  #home section.spotlight div.top div.right {
+    width: 93%;
+  }
+  #home section.spotlight div.top div.left p {
+    margin: 15px 0px;
+    font-size: 14px;
+  }
+  #home section.spotlight div.top div.left form input[type="submit"] {
+    width: 25%;
+  }
+  #home section.spotlight div.bottom h4 {
+    text-align: center;
+    font-size: 20px;
+  }
+  #home section.spotlight div.bottom div.logo ul {
+    flex-wrap: wrap;
+  }
+  #home section.spotlight div.bottom div.logo ul li {
+    width: 26%;
+    margin: 17px 8px;
+  }
+  #boost div.content div.left {
+    width: 92%;
+  }
+  #boost div.content div.right div.img_container_top_one {
+    width: 17%;
+  }
+  #boost div.content div.right {
+    width: 92%;
+    margin: 0 auto;
+  }
+  #boost div.content div.right div.img_container_top_two {
+    width: 17%;
+  }
+  #boost div.content div.right div.img_container_top_three {
+    width: 17%;
+  }
+  #video h1 {
+    width: 100%;
+    font-size: 24px;
+  }
+  #video ul li {
+    width: 93%;
+    margin: 17px auto;
+  }
+  #video ul li div.images div.img_container_three {
+    padding: 10px;
+  }
+  #video ul li div.images div.img_container_two {
+    width: 26%;
+    bottom: 6%;
+    left: 4%;
+  }
+  #video ul li p {
+    margin-top: 10px;
+  }
+  #video ul li div.images div.img_container_two_last {
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    width: 73%;
+  }
+  #profile ul li div.img_container_one {
+    top: 56%;
+    width: 22%;
+    right: 71%;
+  }
+  #profile ul li div.img_container_two {
+    width: 21%;
+    top: 55%;
+    right: 74%;
+  }
+  #marketing h1 {
+    font-size: 24px;
+  }
+  #marketing div.messege div.img_container {
+    bottom: 87%;
+    right: 85%;
+  }
+  #studio h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+  #studio ul {
+    margin-top: 0;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 17%;
+  }
+  #video_resources a.button {
+    width: 62%;
+    padding: 14px;
+  }
+  #form div.right h1 {
+    margin-bottom: 10%;
+    font-size: 20px;
+  }
+  #form div.right form input[type="checkbox"] {
+    margin-top: 1%;
+    width: 21%;
+  }
+  #form div.right form p {
+    width: 79%;
+  }
+}
+@media all and (max-width: 360px) {
+  #boost div.content div.right a {
+    background: blue;
+    width: 37%;
+  }
+  #video h1 {
+    width: 100%;
+    font-size: 24px;
+    margin: 0;
+  }
+  #profile ul li div.img_container_one {
+    top: 50%;
+    width: 26%;
+    right: 70%;
+  }
+  #profile ul li div.img_container_two {
+    width: 23%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    right: 73%;
+  }
+  #marketing div.lists ul li {
+    width: 100%;
+    margin: 18px auto;
+  }
+  #marketing div.lists ul li.border {
+    border-left: none;
+  }
+  #marketing div.lists ul li:last-child {
+    width: 100%;
+    margin-top: 13%;
+  }
+  #marketing div.messege a {
+    width: 42%;
+  }
+  #studio ul li {
+    width: 100%;
+  }
+  #video_resources h1 {
+    font-size: 18px;
+  }
+  #video_resources ul li div.img_container {
+    width: 95%;
+  }
+  #video_resources ul li a {
+    display: block;
+    width: 19%;
+  }
+  footer div.left h1 {
+    padding-top: 16%;
+    width: 91%;
+  }
+}
