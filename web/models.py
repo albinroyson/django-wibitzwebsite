@@ -28,3 +28,52 @@ class Feature(models.Model):
 
     def __str__(self):
         return str(self.image)
+
+
+class Video(models.Model):
+    image=models.ImageField(upload_to="video/image")
+    icon=models.FileField(upload_to="video/icon")
+    title=models.CharField(max_length=225)
+
+    def __str__(self):
+        return str(self.image)
+
+
+class Profile(models.Model):
+    image=models.ImageField(upload_to="video/image")
+    icon=models.FileField(upload_to="video/icon")
+    discribe =models.CharField(max_length=225)
+    name =models.CharField(max_length=225)
+    desigination=models.CharField(max_length=225)
+    company=models.CharField(max_length=225)
+
+    def __str__(self):
+        return str(self.image)
+
+
+class Marketing(models.Model):
+    image=models.FileField(upload_to="market/image")
+    title =models.CharField(max_length=225)
+    discribe =models.CharField(max_length=225)
+
+    def __str__(self):
+        return str(self.image)
+
+class Studio(models.Model):
+    icon=models.FileField(upload_to="studio/icon")
+    image=models.FileField(upload_to="studio/image")
+    title =models.CharField(max_length=225)
+    discribe =models.CharField(max_length=225)
+
+    def __str__(self):
+        return str(self.image)
+
+
+
+class Blog(models.Model):
+
+    image=models.FileField(upload_to="blog/image")
+    discribe =models.CharField(max_length=225)
+
+    def __str__(self):
+        return str(self.image)

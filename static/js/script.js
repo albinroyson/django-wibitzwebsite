@@ -12,6 +12,7 @@ $(document).ready(function () {
             processData:false,
             contentType:false,
             cache:false,
+           
             success:function(data){
             var title = data["title"]
             var message = data["message"]
@@ -32,3 +33,10 @@ $(document).ready(function () {
         })
     })
 })
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }

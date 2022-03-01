@@ -1,4 +1,3 @@
-from web.views import index
 from django.urls import path
 from web.views import index,subscribe
 

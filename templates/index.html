@@ -49,7 +49,7 @@
                   create short form video online in minutes – no experience
                   necessary.
                 </p>
-                <form action="{%  url 'web:subscribe' %}" method="post" class="ajax"   >
+                <form action="{%  url 'web:subscribe' %}" method="post" class="ajax" name="myform"  onsubmit="return validateForm()">
             
                   {% csrf_token %}
                   <input type="email" placeholder="Enter your work email" name="email" />
@@ -69,7 +69,6 @@
                   {% for customer in customers %}
                   <li><img src="{{ customer.image.url }}" alt=""></li>
                   {% endfor %}
-                
                 </ul>
               </div>
             </div>
@@ -88,7 +87,7 @@
             </div>
             <div class="right">
               <div class="img_container_top_one">
-                <img src="{{ feature.icon }}">
+                <img src="{{ feature.icon.url }}">
               </div>
               <h4>{{ feature.title}}</h4>
               <h6>{{ feature.description}}
@@ -97,7 +96,7 @@
                <p><i>"{{ feature.testimonial_description}}</i></p>
               <span><b>{{ feature.testimonial_author }}{{ feature.auther_desigination }}<span>
               <div class="img_container_bottom">
-                <img src="{{ feature.testimonial_logo}}" />
+                <img src="{{ feature.testimonial_logo.url}}" />
               </div>
             </div>
            
@@ -109,83 +108,44 @@
       <section class="wrapper">
         <h1>Create video like these leading brands </h1>
         <ul>
+          {% for video in videos %}
           <li>
             <div class="images">
               <div class="img_container_one">
-                <img src="{% static 'images/review1.jpg' %}" alt="" />
+                <img src="{{ video.image.url }}" alt="" />
               </div>
               <div class="img_container_two">
-                <img src="{% static 'images/logo-brand-nbc2.svg' %}" alt="ncb" />
+                <img src="{{ video.icon.url }}" alt="ncb" />
               </div>
               <div class="img_container_three">
                 <img src="{% static 'images/play.svg' %}">
               </div>
             </div>
-            <p>How NBC enchances their content offering with custom video automation</p>
+            <p>{{ video.title }}</p>
           </li>
-            <li>
-              <div class="images">
-                <div class="img_container_one">
-                  <img src="{% static 'images/review1.jpg' %}" alt="" />
-                </div>
-                <div class="img_container_two_middle">
-                  <img src="{% static 'images/hubspot-1.svg' %}" alt="ncb" />
-                </div>
-                <div class="img_container_three">
-                  <img src="{% static 'images/play.svg' %}">
-                </div>
-              </div>
-              <p>How NBC enchances their content offering with custom video automation</p>
-          </li>
-          <li>
-            <div class="images">
-              <div class="img_container_one">
-                <img src="{% static 'images/review1.jpg' %}" alt="" />
-              </div>
-              <div class="img_container_two_last">
-                <img src="{% static 'images/HousingWi.svg' %}" alt="ncb" />
-              </div>
-              <div class="img_container_three">
-                <img src="{% static 'images/play.svg' %}">
-              </div>
-            </div>
-            <p>How NBC enchances their content offering with custom video automation</p>
-          </li>
+          {% endfor %}
         </ul>
       </section><!-- ( #video> section.wrapper ) -->
     </section><!-- ( #video ) -->
     <section id="profile">
       <section class="wrapper">
         <ul>
+          {% for profile in profiles %}
           <li>
             <div class="img_container">
-              <img src="{% static 'images/Chase-Kroll-920x760normal-1.png' %}" alt="">
+              <img src="{{ profile.image.url }}" alt="">
             </div>
             <div class="img_container_one">
-              <img src="{% static 'images/Hogan_Lovells_logo_white_bg2.svg' %}" alt="logo" />
+              <img src="{{ profile.icon.url }}" alt="logo" />
 
             </div>
-            <h3>The versatility of wibbitz allows us to create video for any kind of digital content-making our team
-                more efficent while scaling production.
+            <h3>{{ profile.discribe }}
             </h3>
-            <p>chase koli</p>
-            <span>managing Director</span>
-            <p>Startergic Communications</p>
+            <p>{{ profile.name}}</p>
+            <span>{{ profile.desigination}}</span>
+            <p>{{ profile.company}}</p>
           </li>
-          <li>
-            <div class="img_container">
-              <img src="{% static 'images/Ken-Gibs-920x760normal-1.png' %}" alt="Chase-Kroll-920x760normal-1">
-            </div>
-            <div class="img_container_two">
-              <img src="{% static 'images/BET_logo_black.svg' %}" alt="" />
-            </div>
-            <h3>The versatility of wibbitz allows us to create video for any kind of digital content-making our team
-              more efficent while scaling production.
-          </h3>
-          <p>chase koli</p>
-          <span>managing Director</span>
-          <p>Startergic Communications</p>
-          </li>
+          {% endfor %}
         </ul>
       </section><!-- ( #profile> section.wrapper ) -->
     </section><!-- ( #profile ) -->
@@ -194,66 +154,28 @@
         <h1>Wibbitz gives every team the freadom to create</h1>
         <div class="lists">
           <ul>
+            {% for marketing in marketings %}
             <li>
               <div class="top">
                 <div class="img_container">
-                  <img src="{% static 'images/usecase-illustration-marketing.svg' %}" alt="" />
+                  <img src="{{ marketing.image.url }}" alt="" />
                 </div>
                 <h6>
-                  Marketing
+                  {{ marketing.title }}
                 </h6>
-                <p>romote your blog posts, case studies, and product announcements with branded videos.</p>
+                <p>{{ marketing.discribe}}.</p>
                 <div class="bottom">
                   <div class="img_container">
-                    <img src="{% static 'images/usecase-illustration-marketing.svg' %}" alt="" />
+                    <img src="{{ marketing.image.url }}" alt="" />
                   </div>
                   <h6>
-                    Marketing
+                    {{ marketing.title }}
                   </h6>
-                  <p>romote your blog posts, case studies, and product announcements with branded videos.</p>
+                  <p>{{ marketing.discribe}}.</p>
                 </div>
               </div>
             </li>
-            <li class="border">
-              <div class="top">
-                <div class="img_container">
-                  <img src="{% static 'images/usecase-illustration-marketing.svg' %}" alt="" />
-                </div>
-                <h6>
-                  Marketing
-                </h6>
-                <p>romote your blog posts, case studies, and product announcements with branded videos.</p>
-                <div class="bottom">
-                  <div class="img_container">
-                    <img src="{% static 'images/usecase-illustration-marketing.svg' %}" alt="" />
-                  </div>
-                  <h6>
-                    Marketing
-                  </h6>
-                  <p>romote your blog posts, case studies, and product announcements with branded videos.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="top">
-                <div class="img_container">
-                  <img src="{% static 'images/usecase-illustration-marketing.svg' %}" alt="" />
-                </div>
-                <h6>
-                  Marketing
-                </h6>
-                <p>romote your blog posts, case studies, and product announcements with branded videos.</p>
-                <div class="bottom">
-                  <div class="img_container">
-                    <img src="{% static 'images/usecase-illustration-marketing.svg' %}" alt="" />
-                  </div>
-                  <h6>
-                    Marketing
-                  </h6>
-                  <p>romote your blog posts, case studies, and product announcements with branded videos.</p>
-                </div>
-              </div>
-            </li>
+            {% endfor %}
           </ul>
         </div>
         <div class="messege">
@@ -272,45 +194,22 @@
       <section class="wrapper">
         <h1>our three video solutions are built for every type of business</h1>
         <ul>
+          {% for studio in studios %}
           <li>
+            
             <Div class="first">
               <div class="img_container">
-                <img src="{% static 'images/Studio-icon.svg' %}" alt="" />
+                <img src="{{studio.icon.url}}" alt="" />
               </div>
-              <h4>Studio</h4>
-              <p>create professional short form video with the online video editor that any one can master</p>
+              <h4>{{ studio.title }}</h4>
+              <p>{{ studio.discribe}}</p>
               <a href="#">Learn More</a>
               <div class="img_container_bottom_one">
-                <img src="{% static 'images/studio-card.png' %}" alt="" />
+                <img src="{{ studio.image.url }}" alt="" />
               </div>
             </Div>
           </li>
-          <li>
-            <div class="second">
-              <div class="img_container">
-                <img src="{% static 'images/Lightbox-icon.svg' %}" alt="" />
-              </div>
-              <h4>Studio</h4>
-              <p>create professional short form video with the online video editor that any one can master</p>
-              <a href="#">Learn More</a>
-              <div class="img_container_bottom_two">
-                <img src="{% static 'images/lightbox-card.png' %}" alt="" />
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="third">
-              <div class="img_container">
-                <img src="{% static 'images/wavi-icon.svg' %}" alt="" />
-              </div>
-              <h4>Studio</h4>
-              <p>create professional short form video with the online video editor that any one can master</p>
-              <a href="#">Learn More</a>
-              <div class="img_container_bottom_three">
-                <img src="{% static 'images/wavi-card.png' %}" alt="" />
-              </div>
-            </div>
-          </li>
+          {% endfor %}
         </ul>
       </section><!-- ( #studio> section.wrapper ) -->
     </section><!-- ( #studio ) -->
@@ -318,30 +217,16 @@
       <section class="wrapper">
         <h1>Video resources:insider advise on how to bring your content to life</h1>
         <ul>
+          {% for blog in blogs %}
           <li>
             <div class="img_container">
-              <img src="{% static 'images/Blog-video-attention-span-2.jpg' %}" alt=""> 
+              <img src="{{ blog.image.url }}" alt=""> 
             </div>
             <p>Blog Post</p>
-            <h4>6 best video practices for capturing audiences 8-second attention span</h4>
+            <h4>{{ blog.discribe}}</h4>
             <a href="#">read blog</a>
           </li>
-          <li>
-            <div class="img_container">
-              <img src="{% static 'images/Webinar-Ceros-Thumbnail.jpg' %}" alt=""> 
-            </div>
-            <p>Blog Post</p>
-            <h4>6 best video practices for capturing audiences 8-second attention span</h4>
-            <a href="#">read blog</a>
-          </li>
-          <li>
-              <div class="img_container">
-                <img src="{% static 'images/2019-Q3-Instagram-Report-EN-Thumbnail.png' %}" alt=""> 
-              </div>
-              <p>Blog Post</p>
-              <h4>6 best video practices for capturing audiences 8-second attention span</h4>
-              <a href="#">read blog</a>
-          </li>
+          {% endfor %}
         </ul>
         <a href="" class="button">Explore all resources</a>
       </section><!-- ( #video_resourses> section.wrapper ) -->
